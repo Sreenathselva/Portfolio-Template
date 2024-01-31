@@ -1,0 +1,2543 @@
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'hansonB';
+    src: url(./font/Hanson-Bold.ttf);
+}
+  html,body{
+    margin: 0;
+    scroll-behavior: smooth;
+    padding: 0;
+    background-color: #000;
+    /* overflow-x: hidden; */
+}
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 0; /* Set the width to 0 to hide the scrollbar */
+}
+
+/* Optional: You can style the track and handle if needed */
+::-webkit-scrollbar-track {
+    background-color: transparent; /* Set the background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set the color of the scrollbar handle */
+}
+
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+/* Home */
+#home{
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/img/homeBG.jpg);
+    background-size: cover;
+    background-position-y: -4vw;
+}
+.home-cont{
+    font-size: 1.35vw;
+    font-family: 'hansonB';
+}
+.home-cont a{
+    color: #e7e7e7;
+    position: absolute;
+    letter-spacing: .3vw;
+}
+.logo a{
+    position: fixed;
+    z-index: 200;
+    top: 3vw;
+    left: 3vw;
+}
+.logo a img{
+    width: 2.4vw;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotatey(360deg);
+    }
+}
+.abtLink{
+top: 3vw;
+left: 46vw;
+}
+.contactLink{
+  transform: rotate(90deg);
+  right: 0;
+  top: 24vw;
+}
+.strengthLink{
+  bottom: 3vw;
+  left: 44vw;
+}
+.portLink{
+    top: 24vw;
+    transform: rotate(-90deg);
+}
+.AboutMe .Down{
+    position: absolute;
+    right: 5vw;
+    transform: translateY(4vw) rotate(-90deg);
+    cursor: pointer;
+    
+}
+.ContactContact .Down{
+    position: absolute;
+    right: 5vw;
+    transform: translateY(4vw);
+    cursor: pointer;
+}
+.myStrength .Down{
+    position: absolute;
+    right: 5vw;
+    transform: translateY(3vw) rotate(90deg);
+    cursor: pointer;
+}
+.portfolio .Down{
+    position: absolute;
+    right: 5vw;
+    transform: translateY(2vw) rotate(180deg);
+    cursor: pointer;
+}
+
+.visible {
+    display: block !important;
+}
+
+.visible.AboutMe {
+    top: 0;
+}
+
+.visible.ContactContact {
+    right: 0;
+}
+
+.visible.myStrength {
+    bottom: -57vw;
+    position: absolute;
+}
+
+.visible.portfolio {
+    left: 0;
+   
+}
+
+.transition {
+    transition: all ease .5s;
+}
+.ContactContact{
+position: absolute;
+top: 0;
+right: -100vw;
+}
+.portfolio{
+    position: absolute;
+    top: 0;
+    left: -100vw;
+}
+.myStrength{
+    bottom: 46vw;
+    position: absolute;
+}
+/* about me */
+.AboutMe{
+    position: absolute;
+    top: -513vh;
+    transition: all ease .5s;
+}
+#about{
+    background-color: #000;
+    
+}
+.abtContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+.abtBoxes{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    padding: .5vw 0 0 0 ; 
+}
+.abtLeft{
+    width: 35vw;
+    height: 46vw;
+    background: url(../images/img/rishal_about.jpg);
+    background-size: cover;
+}
+.abtRight{
+    width: 42vw;
+    height: auto;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: .6vw;
+}
+.abtHead{
+    width: 23VW;
+    font-size: 3vw;
+    font-family: 'hansonB';
+    font-weight: 900;
+}
+.abtMe{
+    color: white;
+    height: 4vw;
+    width: auto;
+    /* border-bottom: 2px solid white; */
+}
+.abtMe::after{
+    content: '';
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    width: 14vw;
+    transform: translate(-21.5vw, 4vw);
+
+}
+.abtHead span{
+    color: #f6483b;
+    font-size: 1.5vw;
+    font-weight: 800;
+    position: absolute;
+    transform: translate(11.5vw, -0.8vw);
+    background: black;
+
+}
+.abtContent{
+    padding: 1vw 0 0.5vw;
+    font-size: 1vw;
+    font-family: 'poppins';
+    font-weight: 400;
+    color: rgb(157, 157, 157);
+}
+.abtContent p{
+    padding: 0.8vw 0 0;
+}
+.abtContent p:last-child{
+    padding-bottom: 0;
+}
+.abtbtn1{
+    width: 15vw;
+    height: 2.8vw;
+    background: #f6483b;
+    color: white;
+    border: #f6483b solid 1px;
+    margin-right: 2vw;
+}
+/* .abtButtons{
+    width: 28vw;
+    display: flex;
+    justify-content: space-between;
+} */
+.abtButtons button{
+    font-size: 1.1vw;
+    font-family: 'montserrat';
+    font-weight: 900;
+}
+.abtbtn2{
+    width: 10vw;
+    height: 3vw;
+    background: #f6483b;
+    border: #f6483b solid 1px;
+    color: white;
+}
+.eduContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.eduSection{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vw 0 0 ;
+}
+.eduSection .eduHead:last-child{
+    padding: 2vw 0 0;
+}
+.eduHead{
+    width: 23vw;
+    height: 7vw;
+    font-size: 3vw;
+    font-family: 'hansonB';
+    font-weight: 900;
+}
+.eduMe::after{
+    content: '';
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    width: 13vw;
+    transform: translateY(3px);
+}
+.eduMe{
+    color: white;
+    height: 4vw;
+    width: 18vw;
+    position: relative;
+}
+.eduHead span{
+    color: #f6483b;
+    font-size: 1.5vw;
+    font-weight: 800;
+    position: absolute;
+    transform: translate(12.8vw, -0.9vw);
+    background: black;
+}
+.experienceeeee span{
+    transform: translate(10.9vw, -0.9vw);
+}
+.eduboxes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.edubox{
+    width: 40vw;
+    height: 10vw;
+    background-color: #000;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.eduboxes .edu1::before{
+ content: '';
+ position: absolute;
+ display: block;
+ width: 2px;
+ background-color: rgba(179, 179, 179, 0.588);
+ height: 10vw;
+ left: 50vw;
+}
+.eduboxes .edu2:after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 2px;
+    background-color: rgba(179, 179, 179, 0.588);
+    height: 10vw;
+}
+.educontent2,.educontent1{
+    width: 39vw;
+    display: flex;
+}
+.edu1{
+    justify-content: end;
+}
+.eduLeft{
+    width: 30%;
+}
+.eduRight{
+    width: 70%;
+}
+.eduLeft p{
+font-size: 4.5vw;
+font-family: 'montserrat';
+font-weight: 800;
+color: #202020;
+transition: all ease .5s;
+}
+.eduRight p{
+    font-size: 1.3vw;
+    font-weight: 600;
+    font-family: 'poppins';
+    color: white;
+
+}
+.educontent2 .eduRight{
+ text-align: end;
+}
+.eduRight div{
+    color: white;
+    font-size: .9vw;
+    font-weight: 500;
+    font-family: 'poppins';
+}
+.eduRight span{
+    color: #ffffffae;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family: 'poppins';
+}
+.bul{
+    width: 0.5vw;
+    height: 0.5vw;
+    border: 3px solid white;
+    background-color: #000;
+    border-radius: 50%;
+    position: relative;
+    right: 1.4vw;
+    top: 3.4vw;
+    transition: all ease .5s;
+}
+.bul1{
+    width: 0.5vw;
+    height: 0.5vw;
+    border: 3px solid white;
+    background-color: #000;
+    border-radius: 50%;
+    position: relative;
+    left: 12.3vw;
+    top: 3vw;
+    z-index: 2;
+    transition: all ease .5s;
+}
+.edubox:hover .bul{
+    background-color: #f6483b;
+}
+.edubox:hover .bul1{
+    background-color: #f6483b;
+}
+.edubox:hover .eduLeft p{
+    color: #f6483b;
+}
+
+/* Experience */
+.exp-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'montserrat';
+    color: white;
+}
+.exp-section{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.exp-box{
+    width: 40vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exp-inBox{
+    width: 38vw;
+    height: 25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2vw;
+}
+.expPatch{
+    width: 30vw;
+    height: 25vw;
+    background-color: #111111;
+    position: absolute;
+    transform: translate(6.5vw,-1vw);
+    transition: all ease .5s;
+}
+.exp-box:hover .expPatch{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.exp-box:hover .expLeft p{
+    color: #f6483b;
+}
+.expLeft p{
+    color: #202020;
+    font-size: 7.5vw;
+    font-weight: 900;
+    transition: all ease .5s;
+    font-family: 'hansonB';
+
+}
+.expLeft{
+    width: 65%;
+    height: 70%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.expRight{
+    width: 32%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: .6vw;
+}
+.desMore{
+    width: 18vw;
+    height: 18vw;
+    padding: 0.4vw;
+    border: #f6483b 1px solid;
+    transform: translate(-22vw,-7vw);
+    margin: 1vw;
+    position: absolute;
+    background-color: #111111;
+    font-size: 0.9vw;
+    color: #808080;
+    font-family: 'poppins';
+    font-weight: 500;
+    z-index: 3;
+    transition: all ease .3s;
+    opacity: 0;
+}
+.exp-as{
+    font-size: 1.2vw;
+    height: 3vw;
+}
+.exp-comp{
+    font-weight: 700;
+    font-size: 0.9vw;
+}
+.exp-des{
+    font-size: 0.81vw;
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #cdcdcd;
+    height: 9vw;
+}
+.exp-des:hover .desMore{
+opacity: 1;
+}
+.exp-read{
+    font-family: 'lato';
+    font-size: 1.8vw;
+    font-weight: 700;
+    color: #f6483b;
+}
+.till{
+    font-size: 1.15vw;
+    color: #cdcdcd;
+    font-family: 'Poppins';
+}
+.expRight:hover .desMore{
+    opacity: 1;
+}
+.desMore:hover{
+    opacity: 0;
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+/* Profiles */
+#container{
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+}
+.Profile-container{
+    width: 90vw;
+    display: flex;
+}
+.profileLeft{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    height: 15vw;
+}
+.pLeftinner{
+    width: 49vw;
+}
+.profileRight{
+    width: 40vw;
+}
+.profileDes{
+    font-size: 1.08vw;
+    color: #cdcdcd;
+    font-family: 'poppins';
+}
+.profileHead{
+    color: white;
+    height: 40%;
+    font-size: 3vw;
+    font-family: 'hansonB';
+    font-weight: 900;
+}
+.proH{
+    color: white;
+    height: 4vw;
+    width: 18vw;
+    position: relative; 
+}
+.profileHead::after {
+    content: '';
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    z-index: 0;
+    width: 9vw;
+    transform: translateY(1px);
+}
+.profileHead span {
+    color: #f6483b;
+    font-size: 1.5vw;
+    font-weight: 800;
+    position: absolute;
+    z-index: 2;
+    transform: translate(8vw, -0.85vw);
+    background: black;
+}
+.acc-cont{
+    display: flex;
+
+}
+.pOwl{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.pOwl .owl-dots{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    height: 2vw;
+}
+.pOwl a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pOwl .owl-dots span{
+    width: 0.7vw;
+    display: block;
+    height: 0.7vw;
+    background: #202020;
+    border-radius: 50%;
+}
+.pOwl .owl-dots span:hover{
+    background-color: rgb(206, 206, 206);
+}
+.owl-dots .active span{
+    background: rgb(206, 206, 206);
+}
+.accounts i{
+    transition: all .3s ease;
+}
+.accounts:hover .fa-behance{
+    color: #053eff;
+}
+.accounts:hover .fa-dribbble{
+    color: #d63384;
+}
+.accounts:hover .fa-envira{
+    color: #76c239;
+}
+.accounts:hover .fa-pinterest-p{
+    color: #c8232c;
+}
+.accounts:hover .fa-youtube{
+    color: #c4302b;
+}
+.accounts:hover .fa-instagram{
+    color: #d62976;
+}
+.accounts{
+    height: 11vw;
+    width: 16vw;
+    color: white;
+    font-family: 'montserrat';
+    font-weight: 800;
+    font-size: 2.5vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.aIcon{
+    display: flex;
+    justify-content: center;
+}
+.aIcon i{
+    font-size: 6.5vw;
+    color: #202020;
+}
+/* Contact Me */
+#contactMe{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000;
+    height: auto;
+    padding: 1vw 0;
+}
+
+.cHead{
+    width: 80vw;
+    height: 8vw;
+    DISPLAY: flex;
+    ALIGN-ITEMS: center;
+    justify-content: center;
+}
+#contactMe .cHead{
+    width: 80vw;
+    height: 6vw;
+    DISPLAY: flex;
+    ALIGN-ITEMS: start;
+    justify-content: start;
+    
+}
+.cHead .abtMe{
+    width: 100%;
+    font-size: 3.2vw;
+    height: 4.6vw;
+}
+.cHead .abtMe::after {
+    width: 20vw;
+    transform: translate(-31.4vw, 4.2vw);
+}
+.cHead .abtHead span {
+    transform: translate(17.9vw, -1.3vw);
+    padding-left: .3vw;
+}
+.cHead .abtHead{
+    width: auto;
+    margin-left: 4vw;
+}
+
+.form-container{
+    display: flex;
+    gap: 5vw;
+}
+.form-con{
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+.form-head{
+    width: 100%;
+    font-family: 'montserrat';
+    font-size: 3vw;
+    font-weight: 800;
+    color: white;
+    padding: 0 0 1vw 0;
+}
+#contactMe input,textarea{
+    background-color: #111111;
+    color: white;
+}
+#contactMe textarea{
+    width: 100%;
+    resize: vertical;
+    font-family: 'montserrat';
+}
+.nameEmail{
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+form{
+    font-size: 1.3vw;
+    width: 40vw;
+}
+.fName,.fMail{
+    width: 48%;
+    border: 0;
+    height: 3.3vw;
+}
+.form form{
+    color: white;
+    height: auto;
+    display: flex;
+    gap: 3.5vw;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#contactMe input:hover{
+    background-color: #3f3f3f; /* Change this to the desired background color */
+}
+#contactMe input {
+    background-color: #111111;
+    color: white;
+    height: 3vw;
+    border: none;
+    transition: background-color 0.3s ease; /* Add transition for smooth effect */
+}
+
+#contactMe input .hasText {
+    background-color: #3f3f3f !important; /* Change this to the desired background color */
+}
+.fSubmit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+#contactMe .fSubmit input{
+    width: 11vw;
+    height: 3.5vw;
+    background-color: #f6483b;
+    font-size: 1.2vw;
+    font-weight: 800;
+    color: white;
+    border: 1px #f6483b solid;
+}
+#contactMe .fSubmit input:hover{
+    background-color: #000;
+    color: #f6483b;
+}
+#contact
+.fsubject{
+    width: 100%;
+    border: 0;
+    height: 3.3vw;
+}
+.contactCont{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+}
+.contactCont::before{
+    width: 2px;
+    content: '';
+    background-color: #3f3f3fb7;
+    height: 100%;
+    position: relative;
+    right: -2.5vw;
+}
+.contactWrap{
+    position: relative;
+}
+.contactBoxes{
+    width: 30vw;
+    height: 31.3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: end    ;
+    justify-content: space-between;
+}
+.contactBox1,.contactBox2,.contactBox3{
+    width: 20.5vw;
+    height: 9vw;
+    opacity: .2;
+    position: absolute;
+    transition: all ease .5s;
+}
+.cBox{
+    width: 20vw;
+    height: 9vw;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins';
+    font-weight: 500;
+    color: white;
+    position: absolute;
+}
+.contactWrap{
+    width: 20vw;
+    height: 9vw;
+    transition: all ease .5s;
+}
+.phoneDes{
+    font-family: 'poppins';
+    font-weight: 600;
+    color: white;
+    opacity: 1;
+}
+.contactBox1{
+    background: url(../images/clients/Contact---Phone.jpg);
+    background-size: cover;
+}
+.contactBox2{
+    background: url(/images/clients/Contact---Email.jpg);
+    background-size: cover;
+}
+
+.contactBox3{
+    background: url(/images/clients/Contact---Address.jpg);
+    background-size: cover;
+}
+.contactWrap:hover{
+    transform: scale(1.05);
+}
+.contactWrap:hover .contactOp{
+    opacity: .35;
+}
+footer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vw ;
+    background: #000;
+    color: white;
+    font-family: 'montserrat';
+}
+footer p{
+    font-size: 1.1vw;
+}
+.footerCont{
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+.footerLeft{
+    width: 65%;
+    height: 2.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.footerRight{
+    width: 35%;
+    height: 2.2vw;
+    display: flex;
+    justify-content: end;
+}
+.fIcon{
+    width: 2vw;
+    height: 2vw;
+}
+.footerRight>div{
+    display: flex;
+    width: 22vw;
+    justify-content: space-around;
+}
+.fIcon{
+    background-color:#3f3f3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease .3s;
+    color: #c5c5c5;
+}
+/* .fIcon i{
+    color: #c5c5c5;
+} */
+.fIcon:hover{
+    background-color: #c4302b;
+    color: #fff;
+}
+
+/********** SWIPER**************/
+.strengthHead{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.strengthHead .cHead .abtHead {
+    width: auto;
+}
+.strengthHead .abtMe::after {
+    width: 22vw;
+    transform: translate(-23.3vw, 4.4vw);
+}
+.strengthHead .abtHead span {
+    transform: translate(9.35vw, -1.2vw);
+}
+.myStrength{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+}
+.swiper-container{
+    width: 100vw;
+    gap: 5vw;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+.mySwiper{
+    width: 40vw;
+    height: 40vw;
+    display: flex;
+    margin: 0;
+}
+.myStrength .swiper-wrapper{
+    width: 45vw;
+}
+.myStrength .swiper-slide{
+    width: 40vw ;
+    height: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./images/Chalk-Drawing-Joker-Digital-Art.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0vw;
+    background-position-y: -7vw;
+}
+.myStrength .swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.myStrength .swiper-pagination{
+    width: 45vw;
+    position: absolute;
+    /* display: flex;
+    flex-wrap: wrap;
+    column-gap: 5vw; */
+}
+.myStrength .swiper-pagination-bullet{
+    width: 20vw;
+    height: 16vw;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.363)454;
+}
+.page-con{
+    height: 32vw;
+    position: relative;
+    width: 45vw;
+}
+.swiperpagebox{
+    width: 20vw;
+    height: 15vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    justify-content: space-around;
+    font-family: 'poppins';
+}
+.swiperpage{
+    width: 40vw;
+    height: 32vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    margin: 0 2.2vw;
+}
+.swiperpagebox img{
+    width: 5vw;
+}
+.swiper-pagination-bullet-active{
+    background: none;
+}
+.SPboxName{
+    font-weight: 800;
+}
+.SPboxDes{
+    width: 80%;
+    text-align: center;
+    color: #848484;
+    font-size: 1vw;
+}
+#rewards{
+    width: 100vw;
+    height: 20vw;
+    background: url(/images/achievements-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: -21vw;
+}
+.rewards-container{
+    width: 100vw;
+    height: 20vw;
+    background-color: #000000da;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rewardBoxes{
+    width: 85vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.rewardBox{
+    width: 25vw;
+    height: 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+.rBoxLeft{
+    width: 40%;
+}
+.rBoxRight{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 55%;
+}
+.rBoxnum{
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 3.6vw;
+    color: white;
+    line-height: 3vw;
+}
+.rBoxdes{
+    color: #b7b7b7;
+    font-size: 1.6vw;
+    font-family: 'poppins';
+    font-weight: 400;
+}
+.rBoxIcon img{
+    width: 10vw;
+}
+
+#clients{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vw 0;
+}
+.clientsHead{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 0 2vw;
+}
+.clHead{
+    font-family: 'hansonB';
+    width: 20vw;
+}
+.clHead div{
+  color: white;
+  font-size: 3.5vw;
+}
+.clHead span{
+    color: #f6483b;
+    font-size: 1.35vw;
+    font-weight: 800;
+    position: absolute;
+    transform: translate(6.9vw, -0.8vw);
+    background: black;
+    z-index: 2;
+}
+.clHead::after{
+    content: '';
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    width: 14vw;
+}
+.clOwlConatiner{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clOwlCont{
+    width: 85vw;
+    height: 18vw;
+    display: flex;
+    align-items: center;
+}
+.clOwlBoxes{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+.clOwlBox{
+    width: 16vw;
+    height: 16vw;
+}
+.clOwlBox img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    opacity: .4;
+    transition: all ease .3s;
+}
+.clOwlBox img:hover{
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+/* *******PORTFOLIO******* */
+.portfolio{
+    background-color: #000;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
+}
+.portHead{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding: 0 0 1.5vw 0;
+}
+.pHead{
+    font-family: 'hansonB';
+}
+.pHead div{
+    color: white;
+    font-size: 3.5vw;
+}
+.pHead span{
+    color: #f6483b;
+    font-size: 1.35vw;
+    font-weight: 800;
+    position: absolute;
+    transform: translate(17vw, -0.8vw);
+    background: black;
+    z-index: 2;
+}
+.pHead::after{
+    content: '';
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    width: 20vw;
+}
+
+.PortOwlContainer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portOwlCont{
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+}
+.portOwlBoxes{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+}
+.portOwlBox{
+    width: 21vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1vw;
+}
+.portUp{
+    width: 21vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.portUp img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+}
+.portUp div{
+    color: white;
+    font-family: 'hansonB';
+    font-size: 1.6vw;
+    position: absolute;
+    text-align: center;
+    width: 90%;
+}
+.portDown{
+    width: 100%;
+    background-color: white;
+    font-family: 'poppins';
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+.portDown div{
+    height: 11vw;
+    font-size: 1vw;
+    font-weight: 400;
+    width: 90%;
+    text-align: center;
+    padding: 0.5vw 0 0 0;
+}
+.portDown button{
+    width: 6vw;
+    height: 2.5vw;
+    margin: 0 0 0.3vw 0;
+    color: white;
+    font-size: 1vw;
+    background-color: #f6483b;
+    border: none;
+    border-radius: .6vw;
+    transition: all ease .4s;
+    cursor: pointer;
+    font-family: 'poppins';
+}
+.portDown button:hover{
+    background-color: #c4302b;
+    transform: translateY(-2px);
+}
+/* PAGES */
+
+#gallery-section{
+    background: #000000;
+    }
+    #gallery-section .eduHead{
+        font-family: 'hansonBB';
+    }
+    .gallery{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .g-head{
+      font-size: 5vw;
+      color: #010717;
+      text-transform: capitalize;
+      background: linear-gradient(to right,#34e9e9, #23668a 5%, #1a3060 20%);
+      background-size: 200% 200%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-family: "asbi";
+      font-weight: 900;
+     padding: 2vw 0vw 0vw 1vw;
+     -webkit-text-stroke: 2px transparent;
+     font-style: italic;
+     letter-spacing: 1;
+    }
+    .gallery-head{
+      width: 100vw;
+      height: auto;
+    }
+    .gal-right{
+      width: 100%;
+      overflow: visible;
+    }
+    .gallery-slide{
+      width: 98%;
+      height: auto;
+      padding: 0;
+      overflow: visible;
+    }
+    .gallery-slide .item{
+      height: 30vw;
+      display: flex;
+      align-items:center ;
+      justify-content: space-around;
+      overflow: visible;
+    
+    }
+    .g-head{
+      font-size: 5vw;
+      color: #010717;
+      text-transform: capitalize;
+      background: #34e9e9;
+      background-size: 200% 200%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-family: "asbi";
+      font-weight: 900;
+     padding: 2vw 0vw 0vw 1vw;
+     -webkit-text-stroke: 2px transparent;
+     font-style: italic;
+    }
+    .gal-box{
+      width: 70.2%;
+      height: auto;
+      /* background: linear-gradient(90deg, rgba(55,255,255,1) 0%, rgba(29,164,219,1) 18%, rgba(26,153,215,1) 33%, rgba(4,74,185,1) 87%); */
+     display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+      transition: all 0.3s ease;
+    }
+    .gal-box img{
+        width: 100%;
+        height: auto;
+        transition: all ease .3s;
+    }
+    .gal-cover{
+        display: block;
+        transition: all ease .3s;
+    }
+    .gallery-slide .item .gal-img{
+      width: 98%;
+      transition: all 0.3s ease;
+    }
+    .gal-active{
+      width: 120%;
+      height: 26vw;
+      position: absolute;
+      margin: 0 4vw;
+    }
+    .gal-box iframe{
+        display: none;
+    }
+    .gal-active iframe{
+        display: block;
+    }
+    .gal-active .gal-cover{
+        display: none;
+    }
+    #gallery .owl-carousel .owl-item .gal-active .gal-cover img {
+        display: none;
+        width: 100%;
+    }
+    .gal-img-cover{
+        position: absolute;
+        width: 70.2%;
+        height: 16.4vw;
+        background: linear-gradient(to top, #000000eb,#00000000);
+        opacity: 1;
+        z-index: 2;
+        transition: all .3s ease;
+    }
+    .headContainer{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #gallery-section .owl-carousel .owl-dots.disabled,#gallery-section .owl-carousel .owl-nav.disabled {
+        display: block;
+        color: white;
+        font-family: 'montserrat';
+        font-weight: 600;
+        font-size: 5vw;
+        transform: translateY(-18vw);
+        height: 0vw;
+    }
+    #gallery-section .owl-carousel .owl-dots.disabled,#gallery-section .owl-carousel .owl-nav {
+        display: block;
+        color: white;
+        font-family: 'montserrat';
+        font-weight: 600;
+        font-size: 5vw;
+        transform: translateY(-18vw);
+        height: 0vw;
+    }
+    #gallery-section .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+        width: 3vw;
+        background-color: rgba(255, 0, 0, 0.263);
+    }
+    #gallery-section button.owl-next{
+        position: absolute;
+        right: 0;
+    }
+    #gallery-section .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span{
+        display: block;
+        transform: translateY(-0.4vw);
+    }
+/* pages video frame */
+    .video-frame iframe{
+        width: 38vw;
+        height: 21.4vw;
+      }
+      
+      #modal3 .modalWrapper{
+        top: 50%;
+        left: 50%;
+        background-color: transparent;
+      }
+      
+      #modal3 .clModal{
+        top: -1vw;
+          right: -3vw
+      }
+      
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    z-index: 1000;
+  }
+  
+  
+  .modalContents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dcdcdc;
+    width: 90%;
+    padding: 1vw 0.4vw;
+  }
+  
+  .form-heading {
+    font-family: "Poppins";
+    color: #ffffff;
+    font-size: 2vw;
+    font-weight: 800;
+    margin: 0.5vw 0vw;
+  }
+  
+  .modalWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    background-color: #8a1741cb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1.3vw;
+  }
+  
+  .modalBg {
+    width: 100%;
+    height: 100%;
+    background-color: #0000008c;
+    backdrop-filter: blur(3px);
+  }
+  .is-show {
+    visibility: visible;
+    opacity: 1;
+    scale: 1.5;
+  }
+/********************* media queries************ */
+
+
+/* Phone version */
+@media screen and (max-width: 450px){
+    #home {
+        background: url(./images/img/home_bg.jpg);
+        background-size: 300%;
+        background-position-x: -106vw;
+        background-repeat: no-repeat;
+        background-position-y: 15vw;
+    }
+    .home-cont {
+        font-size: 3.2vw;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        gap: 3vw;
+    }
+    .home-cont a {
+        position:inherit;
+        letter-spacing: .3vw;
+        font-size: 6vw;
+    }
+    .portLink {
+        transform: rotate(0deg);
+    }
+    .contactLink {
+         transform: rotate(0deg);
+    }
+    .AboutMe{
+        position: inherit   ;
+    }
+    .ContactContact{
+        position: inherit   ;
+    }
+    .portfolio{
+        position: inherit   ;
+    }
+    .myStrength{
+        position: inherit   ;
+    }
+
+
+
+
+
+    /* about me */
+    .abtBoxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .abtLeft {
+        width: 100%;
+        height: 110vw;
+    }
+    .abtRight {
+        width: 100%;
+    }
+    .abtHead {
+        width: auto;
+        font-size: 6vw;
+    }
+    .abtMe {
+        color: white;
+        height: 10vw;
+    }
+    .abtMe::after {
+        height: 1px;
+        width: 28vw;
+        transform: translate(-43.5vw, 7.9vw);
+    }
+    .abtHead span {
+        font-size: 2.5vw;
+        transform: translate(26.4vw, -3.4vw);
+    }
+    .abtContent {
+        padding: 2vw 0;
+        font-size: 2.6vw;
+    }
+    .abtbtn1 {
+        width: 40vw;
+        height: 8vw;
+    }
+    .abtButtons button {
+        font-size: 2.7vw;
+    }
+    .abtbtn2 {
+        width: 25vw;
+        height: 8vw;
+    }
+    .eduHead {
+        width: auto;
+        height: auto;
+        font-size: 6vw;
+        margin: 4vw 0;
+    }
+    .eduMe {
+        height: 6vw;
+        width: 46vw;
+    }
+    .eduMe::after {
+        height: 1px;
+        width: 39vw;
+        transform: translateY(-2px);
+    }
+    .eduHead span { 
+        font-size: 2.1vw;
+        transform: translate(31.6vw, 0vw);
+    }
+    .eduboxes .edubox:nth-child(1){
+        display: none;
+    }
+    .eduboxes .edubox:nth-child(4){
+        display: none;
+    }
+    .eduboxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .eduboxes .edu1::before {
+        display: none;
+    }
+    .edubox {
+        width: 100%;
+        height: 23vw;
+        padding-bottom: 5vw;
+    }
+    .educontent2, .educontent1 {
+        width: 100%;
+        display: flex;
+    }
+    .eduLeft p {
+        font-size: 7.5vw;
+        text-align: center;
+    }
+    .eduRight p {
+        font-size: 2.5vw;
+    }
+    .eduRight div {
+        color: white;
+        font-size: 1.9vw;
+    }
+    .eduRight span {
+        font-size: 2.2vw;
+    }
+    .bul {
+        width: 0.8vw;
+        height: 0.8vw;
+        border: 2px solid white;
+        right: 0.9vw;
+        top: 5.5vw;
+    }
+    .bul1{
+        border: 2px solid white;
+        width: 0.8vw;
+        height: 0.8vw;
+        left: 23.3vw;
+        top: 5.5vw;
+    }
+    .experienceeeee  span {
+        transform: translate(30.3vw, 0vw);
+    }
+    .exp-box {
+        width: 70vw;
+    }
+    .exp-inBox {
+        width: 65vw;
+        height: 50vw;
+    }
+    .expLeft p {
+        font-size: 7.5vw;
+    }
+    .till {
+        font-size: 2.25vw;
+        padding-bottom: 5vw;
+    }
+    .expLeft {
+        width: 40%;
+        /* justify-content: space-around; */
+    }
+    .expRight {
+        width: 57%;
+        height: 70%;
+    }
+    .exp-as {
+        padding-top: 1vw;
+        font-size: 2.5vw;
+        height: auto;
+    }
+    .exp-comp {
+        font-size: 2.2vw;
+    }
+    .exp-des {
+        font-size: 2.21vw;
+        height: auto;
+        padding: 1vw 0;
+    }
+    .exp-read {
+        font-size: 2.7vw;
+    }
+    .desMore {
+        width: 33vw;
+        height: auto;
+        transform: translate(-37vw,-11vw);
+        font-size: 2vw;
+    }
+    .profileLeft {
+        width: 100%;
+        height: 30vw;
+    }
+    .Profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profileRight {
+        width: 80%;
+        padding: 4vw 0;
+    }
+    .accounts {
+        height: 27vw;
+        width: 49vw;
+        font-size: 4.5vw;
+        justify-content: center;
+    }
+    .aIcon i {
+        font-size: 17.5vw;
+    }
+    .pOwl .owl-dots {
+        height: 3vw
+    }
+    .pOwl .owl-dots span {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+    .proH {
+        height: auto;
+        width: 100%;
+    }
+    .profileHead {
+        font-size: 6vw;
+    }
+    .profileDes {
+        padding: 3vw 0.8vw;
+        font-size: 2.58vw;
+    }
+    .profileHead span {
+        font-size: 2.3vw;
+        transform: translate(21vw, -0.85vw);
+    }
+    .profileHead::after {
+        width: 24vw;
+        height: 1px;
+    }
+    .expPatch {
+        width: 42vw;
+        height: 36vw;
+        transform: translate(-0.5vw,-1vw);
+    }
+    footer{
+        padding: 2vw 0;
+        height: auto;
+    }
+    .footerCont {
+        flex-direction: column;
+        gap: 4vw;
+    }
+    footer p {
+        font-size: 2.1vw;
+    }
+    .footerRight{
+        width: auto;
+    }
+    .footerRight div a{
+        width: 6vw;
+    }
+    .footerRight>div {
+        width: auto;
+    }
+
+
+    /* contact me */
+    .cHead .abtMe {
+        font-size: 6vw;
+        height: auto;
+    }
+    #contactMe .cHead {
+        padding: 4vw 0;
+        justify-content: center;
+    }
+    .cHead .abtHead span {
+        font-size: 2.3vw;
+        transform: translate(38.3vw, -1.3vw);
+    }
+    .cHead .abtMe::after {
+        width: 42vw;
+        transform: translate(-59.4vw, 7.4vw);
+    }
+    .form-container {
+        display: flex;
+        gap: 5vw;
+        flex-direction: column;
+        width: 80vw;
+    }
+    form {
+        font-size: 1.3vw;
+        width: auto;
+    }
+    .contactBoxes {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .form-con {
+        width: 100%;
+    }
+    .nameEmail {
+        width: 100%;
+        flex-direction: column;
+        gap: 3vw;
+    }
+    .fName, .fMail {
+        width: 99%;
+        border: 0;
+        height: 7.3vw;
+    }
+    #contactMe input{
+        border: none;
+        height: 7vw;
+    }
+    #contactMe .fSubmit input {
+        width: 18vw;
+        height: 5.5vw;
+        font-size: 2.2vw;
+    }
+    .contactWrap {
+        width: 100%;
+        height: 40vw;
+    }
+    .contactBox1, .contactBox2, .contactBox3 {
+        width: 100%;
+        height: 40vw;
+    }
+    .cBox {
+        width: 100%;
+        height: 40vw;
+        font-size: 2.2vw;
+        gap: 2vw;
+    }
+    .contactBoxes {
+        height: auto;
+        gap: 5vw;
+    }
+    .strengthHead {
+        padding: 5vw 0;
+    }
+    /************** MY STRENGTH ***************/
+    .strengthHead .cHead .abtHead span {
+        font-size: 2.3vw;
+        transform: translate(22.3vw, -1.3vw);
+    }
+    .strengthHead .cHead .abtMe::after {
+        width: 32vw;
+        transform: translate(-43.4vw, 7.4vw);
+    }
+    .swiper-container {
+        width: 100vw;
+        gap: 5vw;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mySwiper {
+        width: 50vh;
+        height: 50vh;
+    }
+    .myStrength .swiper-slide {
+        width: 40vw;
+        height: 50vh;
+    }
+    .page-con {
+        height: 35vh;
+        width: 50vh;
+    }
+    .swiperpage {
+        width: 100%;
+        height: 100%;
+    }
+    .swiperpagebox {
+        width: 25vh;
+        height: 15vh;
+    }
+    .swiperpagebox img {
+        width: 15vw;
+    }
+    .myStrength .swiper-pagination {
+        width: 50vh;
+        position: absolute;
+        height: 34vh;
+    }
+    .myStrength .swiper-pagination-bullet {
+        width: 47%;
+        height: 50%;
+    }
+    .SPboxName {
+        font-weight: 800;
+        font-size: 3vw;
+    }
+    .SPboxDes {
+        font-size: 2.2vw;
+    }
+    #rewards {
+        width: 106%;
+        height: auto;
+        background-size: 295%;
+        background-position-x: -88vw;
+        background-position-y: 0vw;
+    background-repeat: no-repeat;
+    background-attachment:local;
+    }
+    .rewardBoxes {
+        align-items: center;
+        flex-direction: column;
+    }
+    .rewards-container {
+        height: auto;
+        width: 100%;
+    }
+    .rewardBox {
+        width: 80%;
+        height: 35vw;
+    }
+    .rBoxIcon img {
+        width: 80%;
+    }
+    .rBoxnum {
+        font-size: 6.5vw;
+        line-height: 9vw;
+    }
+    .rBoxdes {
+        font-size: 2.6vw;
+    }
+    .rBoxLeft {
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+    .clHead div {
+        font-size: 6.5vw;
+    }
+    .clHead {
+        font-family: 'hansonB';
+        width: auto;
+    }
+    .clHead span {
+        font-size: 2.3vw;
+        transform: translate(11.9vw, -0.8vw);
+    }
+    .clOwlBox {
+        width: 100%;
+        height: 40vh;
+    }
+    .clOwlCont {
+        height: auto;
+    }
+
+
+    /* portfolio */
+    .pHead div {
+        font-size: 6.5vw;
+    }
+    .pHead span {
+        font-size: 2.35vw;
+        transform: translate(33vw, -0.8vw);
+    }
+    .pHead::after {
+        width: 35vw;
+    }
+    .portOwlBox {
+        width: 80vw;
+    }
+    .portUp {
+        width: 100%;
+        height: 60vw;
+    }
+    .portDown div {
+        height: 31vw;
+        font-size: 3.3vw;
+    }
+    .portUp div {
+        font-size: 3.6vw;
+    }
+   .portfolio .owl-carousel.owl-drag .owl-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .portDown button {
+        width: 20vw;
+        height: 6.5vw;
+        font-size: 3vw;
+    }
+
+}
+
+
+/*Tablet version*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    #home {
+        background: url(./images/img/home_bg.jpg);
+        background-size: 300%;
+        background-position-x: -106vw;
+        background-repeat: no-repeat;
+        background-position-y: 15vw;
+    }
+    .home-cont {
+        font-size: 3.2vw;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        gap: 3vw;
+    }
+    .home-cont a {
+        position:inherit;
+        letter-spacing: .3vw;
+        font-size: 6vw;
+    }
+    .portLink {
+        transform: rotate(0deg);
+    }
+    .contactLink {
+         transform: rotate(0deg);
+    }
+    .AboutMe{
+        position: inherit   ;
+    }
+    .ContactContact{
+        position: inherit   ;
+    }
+    .portfolio{
+        position: inherit   ;
+    }
+    .myStrength{
+        position: inherit   ;
+    }
+
+
+
+
+
+    /* about me */
+    .abtBoxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .abtLeft {
+        width: 100%;
+        height: 110vw;
+    }
+    .abtRight {
+        width: 100%;
+    }
+    .abtHead {
+        width: auto;
+        font-size: 6vw;
+    }
+    .abtMe {
+        color: white;
+        height: 10vw;
+    }
+    .abtMe::after {
+        height: 1px;
+        width: 28vw;
+        transform: translate(-43.5vw, 7.9vw);
+    }
+    .abtHead span {
+        font-size: 2.5vw;
+        transform: translate(26.4vw, -3.4vw);
+    }
+    .abtContent {
+        padding: 2vw 0;
+        font-size: 2.6vw;
+    }
+    .abtbtn1 {
+        width: 40vw;
+        height: 8vw;
+    }
+    .abtButtons button {
+        font-size: 2.7vw;
+    }
+    .abtbtn2 {
+        width: 25vw;
+        height: 8vw;
+    }
+    .eduHead {
+        width: auto;
+        height: auto;
+        font-size: 6vw;
+        margin: 4vw 0;
+    }
+    .eduMe {
+        height: 6vw;
+        width: 46vw;
+    }
+    .eduMe::after {
+        height: 1px;
+        width: 39vw;
+        transform: translateY(-2px);
+    }
+    .eduHead span { 
+        font-size: 2.1vw;
+        transform: translate(31.6vw, 0vw);
+    }
+    .eduboxes .edubox:nth-child(1){
+        display: none;
+    }
+    .eduboxes .edubox:nth-child(4){
+        display: none;
+    }
+    .eduboxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .eduboxes .edu1::before {
+        display: none;
+    }
+    .edubox {
+        width: 100%;
+        height: 23vw;
+        padding-bottom: 5vw;
+    }
+    .educontent2, .educontent1 {
+        width: 100%;
+        display: flex;
+    }
+    .eduLeft p {
+        font-size: 7.5vw;
+        text-align: center;
+    }
+    .eduRight p {
+        font-size: 2.5vw;
+    }
+    .eduRight div {
+        color: white;
+        font-size: 1.9vw;
+    }
+    .eduRight span {
+        font-size: 2.2vw;
+    }
+    .bul {
+        width: 0.8vw;
+        height: 0.8vw;
+        border: 2px solid white;
+        right: 0.9vw;
+        top: 5.5vw;
+    }
+    .bul1{
+        border: 2px solid white;
+        width: 0.8vw;
+        height: 0.8vw;
+        left: 23.3vw;
+        top: 5.5vw;
+    }
+    .experienceeeee  span {
+        transform: translate(30.3vw, 0vw);
+    }
+    .exp-box {
+        width: 70vw;
+    }
+    .exp-inBox {
+        width: 65vw;
+        height: 50vw;
+    }
+    .expLeft p {
+        font-size: 7.5vw;
+    }
+    .till {
+        font-size: 2.25vw;
+        padding-bottom: 5vw;
+    }
+    .expLeft {
+        width: 40%;
+        /* justify-content: space-around; */
+    }
+    .expRight {
+        width: 57%;
+        height: 70%;
+    }
+    .exp-as {
+        padding-top: 1vw;
+        font-size: 2.5vw;
+        height: auto;
+    }
+    .exp-comp {
+        font-size: 2.2vw;
+    }
+    .exp-des {
+        font-size: 2.21vw;
+        height: auto;
+        padding: 1vw 0;
+    }
+    .exp-read {
+        font-size: 2.7vw;
+    }
+    .desMore {
+        width: 33vw;
+        height: auto;
+        transform: translate(-37vw,-11vw);
+        font-size: 2vw;
+    }
+    .profileLeft {
+        width: 100%;
+        height: 30vw;
+    }
+    .Profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profileRight {
+        width: 80%;
+        padding: 4vw 0;
+    }
+    .accounts {
+        height: 27vw;
+        width: 49vw;
+        font-size: 4.5vw;
+        justify-content: center;
+    }
+    .aIcon i {
+        font-size: 17.5vw;
+    }
+    .pOwl .owl-dots {
+        height: 3vw
+    }
+    .pOwl .owl-dots span {
+        width: 1.5vw;
+        height: 1.5vw;
+    }
+    .proH {
+        height: auto;
+        width: 100%;
+    }
+    .profileHead {
+        font-size: 6vw;
+    }
+    .profileDes {
+        padding: 3vw 0.8vw;
+        font-size: 2.58vw;
+    }
+    .profileHead span {
+        font-size: 2.3vw;
+        transform: translate(21vw, -0.85vw);
+    }
+    .profileHead::after {
+        width: 24vw;
+        height: 1px;
+    }
+    .expPatch {
+        width: 42vw;
+        height: 36vw;
+        transform: translate(-0.5vw,-1vw);
+    }
+    footer{
+        padding: 2vw 0;
+        height: auto;
+    }
+    .footerCont {
+        flex-direction: column;
+        gap: 4vw;
+    }
+    footer p {
+        font-size: 2.1vw;
+    }
+    .footerRight{
+        width: auto;
+    }
+    .footerRight div a{
+        width: 6vw;
+    }
+    .footerRight>div {
+        width: auto;
+    }
+
+
+    /* contact me */
+    .cHead .abtMe {
+        font-size: 6vw;
+        height: auto;
+    }
+    #contactMe .cHead {
+        padding: 4vw 0;
+        justify-content: center;
+    }
+    .cHead .abtHead span {
+        font-size: 2.3vw;
+        transform: translate(38.3vw, -1.3vw);
+    }
+    .cHead .abtMe::after {
+        width: 42vw;
+        transform: translate(-59.4vw, 7.4vw);
+    }
+    .form-container {
+        display: flex;
+        gap: 5vw;
+        flex-direction: column;
+        width: 80vw;
+    }
+    form {
+        font-size: 1.3vw;
+        width: auto;
+    }
+    .contactBoxes {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .form-con {
+        width: 100%;
+    }
+    .nameEmail {
+        width: 100%;
+        flex-direction: column;
+        gap: 3vw;
+    }
+    .fName, .fMail {
+        width: 99%;
+        border: 0;
+        height: 7.3vw;
+    }
+    #contactMe input{
+        border: none;
+        height: 7vw;
+    }
+    #contactMe .fSubmit input {
+        width: 18vw;
+        height: 5.5vw;
+        font-size: 2.2vw;
+    }
+    .contactWrap {
+        width: 100%;
+        height: 40vw;
+    }
+    .contactBox1, .contactBox2, .contactBox3 {
+        width: 100%;
+        height: 40vw;
+    }
+    .cBox {
+        width: 100%;
+        height: 40vw;
+        font-size: 2.2vw;
+        gap: 2vw;
+    }
+    .contactBoxes {
+        height: auto;
+        gap: 5vw;
+    }
+    .strengthHead {
+        padding: 5vw 0;
+    }
+    /************** MY STRENGTH ***************/
+    .strengthHead .cHead .abtHead span {
+        font-size: 2.3vw;
+        transform: translate(22.3vw, -1.3vw);
+    }
+    .strengthHead .cHead .abtMe::after {
+        width: 32vw;
+        transform: translate(-43.4vw, 7.4vw);
+    }
+    .swiper-container {
+        width: 100vw;
+        gap: 5vw;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mySwiper {
+        width: 50vh;
+        height: 50vh;
+    }
+    .myStrength .swiper-slide {
+        width: 40vw;
+        height: 50vh;
+    }
+    .page-con {
+        height: 35vh;
+        width: 50vh;
+    }
+    .swiperpage {
+        width: 100%;
+        height: 100%;
+    }
+    .swiperpagebox {
+        width: 25vh;
+        height: 15vh;
+    }
+    .swiperpagebox img {
+        width: 15vw;
+    }
+    .myStrength .swiper-pagination {
+        width: 50vh;
+        position: absolute;
+        height: 34vh;
+    }
+    .myStrength .swiper-pagination-bullet {
+        width: 47%;
+        height: 50%;
+    }
+    .SPboxName {
+        font-weight: 800;
+        font-size: 3vw;
+    }
+    .SPboxDes {
+        font-size: 2.2vw;
+    }
+    #rewards {
+        width: 106%;
+        height: auto;
+        background-size: 295%;
+        background-position-x: -88vw;
+        background-position-y: 0vw;
+    background-repeat: no-repeat;
+    background-attachment:local;
+    }
+    .rewardBoxes {
+        align-items: center;
+        flex-direction: column;
+    }
+    .rewards-container {
+        height: auto;
+        width: 100%;
+    }
+    .rewardBox {
+        width: 80%;
+        height: 35vw;
+    }
+    .rBoxIcon img {
+        width: 80%;
+    }
+    .rBoxnum {
+        font-size: 6.5vw;
+        line-height: 9vw;
+    }
+    .rBoxdes {
+        font-size: 2.6vw;
+    }
+    .rBoxLeft {
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+    .clHead div {
+        font-size: 6.5vw;
+    }
+    .clHead {
+        font-family: 'hansonB';
+        width: auto;
+    }
+    .clHead span {
+        font-size: 2.3vw;
+        transform: translate(11.9vw, -0.8vw);
+    }
+    .clOwlBox {
+        width: 100%;
+        height: 40vh;
+    }
+    .clOwlCont {
+        height: auto;
+    }
+
+
+    /* portfolio */
+    .pHead div {
+        font-size: 6.5vw;
+    }
+    .pHead span {
+        font-size: 2.35vw;
+        transform: translate(33vw, -0.8vw);
+    }
+    .pHead::after {
+        width: 35vw;
+    }
+    .portOwlBox {
+        width: 80vw;
+    }
+    .portUp {
+        width: 100%;
+        height: 60vw;
+    }
+    .portDown div {
+        height: 31vw;
+        font-size: 3.3vw;
+    }
+    .portUp div {
+        font-size: 3.6vw;
+    }
+   .portfolio .owl-carousel.owl-drag .owl-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .portDown button {
+        width: 20vw;
+        height: 6.5vw;
+        font-size: 3vw;
+    }
+
+}
