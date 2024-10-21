@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
   loader.style.display = "none";
 });
 
-
+alert("this is created by sreenath selva");
 $(document).ready(function(){
     $(".pOwl").owlCarousel({
         items: 3, // Number of slides to show at once
