@@ -119,7 +119,7 @@ $(document).ready(function () {
 });
 
 
-// PAGES
+// PAGES carousel
 
 $(document).ready(function () {
   $(".gallery-slide").owlCarousel({
